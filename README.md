@@ -1,44 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Image Uploder Client
+A basic image uploader client built using ReactJS. **Relies on the [Image Uploader Server](https://github.com/sgarcia-dev/image-uploader-server) built with Node/Express/Cloudinary Node SDK to work.**
 
-In the project directory, you can run:
+Created because I couldn't find a drastically simplified, easy to use example on how to upload and view images uploaded to Cloudinary through NodeJS SDK, so I made one. The initial source code was the app built by [Jesse Heaslip](https://codeburst.io/@funador)'s [Simple Image Upload with React](https://codeburst.io/react-image-upload-with-kittens-cc96430eaece) article, but I removed and made changes were necessart to remove all the things I found could be confusing to complete React & Node beginners.
 
-### `npm start`
+# How to Run Locally
+* Clone this repository as well as the [image-uploader-server](https://github.com/sgarcia-dev/image-uploader-server).
+* Run both apps via `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Helpful Articles that I used while creating this app (might help clear some questions)
+* An explanation on what **multipart/form-data** is and how it works, the contentType of choice for fileUpload in HTTP,  https://stackoverflow.com/questions/4526273/what-does-enctype-multipart-form-data-mean
+* Explains how to send multipart form data with jQuery, useful to understand what's going on without React, https://stackoverflow.com/questions/5392344/sending-multipart-formdata-with-jquery-ajax
+* Mozilla Developer Network's documentation on FormData, the standard to send multipart form data, https://developer.mozilla.org/en-US/docs/Web/API/FormData
+* How to load files from React forms into Form Data, https://stackoverflow.com/questions/47168659/how-to-send-a-multipart-form-data-from-react-js-with-an-image
+* The wonderful foundation for this app, [Jesse Heaslip](https://codeburst.io/@funador)'s [Simple Image Upload with React](https://codeburst.io/react-image-upload-with-kittens-cc96430eaece) article.
