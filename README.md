@@ -1,5 +1,5 @@
 
-# Image Uploder Server
+# Image Uploder Client
 A basic image uploader client built using ReactJS. **Relies on the [Image Uploader Server](https://github.com/sgarcia-dev/image-uploader-server) built with Node/Express/Cloudinary Node SDK to work.**
 
 Created because I couldn't find a drastically simplified, easy to use example on how to upload and view images uploaded to Cloudinary through NodeJS SDK, so I made one. The initial source code was the app built by [Jesse Heaslip](https://codeburst.io/@funador)'s [Simple Image Upload with React](https://codeburst.io/react-image-upload-with-kittens-cc96430eaece) article, but I removed and made changes were necessart to remove all the things I found could be confusing to complete React & Node beginners.
